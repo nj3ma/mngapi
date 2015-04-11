@@ -10,14 +10,14 @@ font: sans-serif;
 	<script type="text/javascript">
 	var userInput = prompt ( "How many KES do you wish to send?");
 	var amount = userInput/1; 
-	var upperLimit = new Array(49,100,500,1000,1500,2500,3500,5000,7500); 
+	var upperLimit = new Array(49,100,500,1000,1500,2500,3500,5000,7500,); 
 	tier = 0;
 	var i = 0; 
 	while (upperLimit[i] < amount ) {      (upperLimit[i++]);
 tier++;
  } 
-	var sendingFees = new Array (3, 5, 27, 33, 55, 50, 60, 70);
-	var withdrawalFees = new Array (0,10, 27, 27, 33, 49, 60, 70);
+	var sendingFees = new Array ();
+	var withdrawalFees = new Array ();
 	var fee = sendingFees[tier] + withdrawalFees[tier];
 	var total = fee + amount;
 	var display = " transfer fee: " + sendingFees[tier] + " agent  withdrawal fee: " + withdrawalFees[tier] + " total fees: " + fee + " You need: " + total;
