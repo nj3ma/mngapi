@@ -16,8 +16,8 @@ font: sans-serif;
 	while (upperLimit[i] < amount ) {      (upperLimit[i++]);
 tier++;
  } 
-	var sendingFees = new Array ();
-	var withdrawalFees = new Array ();
+	var sendingFees = new Array (1,3,11,15,25,40,55,60,75,85,95,100,110,110,110,110,110,110,110);
+	var withdrawalFees = new Array (0,10,27,27,27,27,49,66,82,110,159,176,187,187,187,275,275,275,330);
 	var fee = sendingFees[tier] + withdrawalFees[tier];
 	var total = fee + amount;
 	var display = " transfer fee: " + sendingFees[tier] + " agent  withdrawal fee: " + withdrawalFees[tier] + " total fees: " + fee + " You need: " + total;
