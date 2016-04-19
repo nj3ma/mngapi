@@ -3,8 +3,9 @@
 		<title> mngapi </title>
 		<style>
 			body{
+			margin-top: 25%;
+			font: helvetica, 20px, bold;
 			background-color:whitesmoke;
-			font: sans-serif;
 			}
 		</style>
 		<script type="text/javascript">
@@ -20,14 +21,13 @@
 		var withdrawalFees = new Array (0,10,27,27,27,27,49,66,82,110,159,176,187,187,187,275,275,275,330);
 		var fee = sendingFees[tier] + withdrawalFees[tier];
 		var total = fee + amount;
-		var display = " transfer fee: " + sendingFees[tier] + " agent  withdrawal fee: " + withdrawalFees[tier] + " total fees: " + fee + " You need: " + total;
+		var display = "Transfer Fee: " + sendingFees[tier] + "." + " Agent Withdrawal Fee: " + withdrawalFees[tier] + "." + " Total Fees: " + fee + "." +  " You need: " + total + " " + "to send" + " " + amount + " " + "including withdrawal charges ";
 		alert(display);
 		document.writeln (display);
 		</script>
 		</head>
 	<body>
-		<h1> An M-PESA tarriff calculator in HTML 5 and JS </h1>
-
+		<h1> An M-PESA tarriff calculator in HTML 5 and JS </h1>	
 	</body>
 </html>
 
